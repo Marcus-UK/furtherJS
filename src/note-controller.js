@@ -5,9 +5,24 @@
   this.listView = new ListView(this.list)
 }
 
-  NoteController.prototype.changeGreeting = function() {
-
-    document.getElementById('app').innerHTML = this.listView.getHTML()
+  NoteController.prototype.viewNote = function() {
+    var notesHTML = this.listView.getHTML()
+    document.getElementById('app').innerHTML = notesHTML
   }
 exports.NoteController = NoteController;
 })(this);
+
+// (function(exports){
+//   function NoteController(noteList) {
+//     this.noteList = noteList;
+//     this.noteList.createAndAdd('Favourite drink: seltzer');
+//     this.noteListView = new NoteListView(this.noteList);
+//   }
+//
+//   NoteController.prototype.displayNotes = function () {
+//     var notesHTML = this.noteListView.getHTML();
+//     document.getElementById('app').innerHTML = notesHTML;
+//   };
+//
+//   exports.NoteController = NoteController;
+// })(this);

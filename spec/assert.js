@@ -3,6 +3,6 @@ var assert = {
     if (!eventToCheck) {
       throw new Error("No: " + eventToCheck + " is WRONG!");
     }
-    console.log('You nailed it you sexy mo-fo. BOOOOOOOOOMMMMMMMMM!!!!')
+    console.log('The test passed!!! No one saw that coming.')
   }
 };
