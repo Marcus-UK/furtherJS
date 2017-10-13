@@ -1,9 +1,9 @@
-window.onload = function(){}
-
 function testNoteControllerDisplayHTML() {
 
   var noteListStub = {
-    store: function() {}
+    store: function() {
+
+    }
   };
 
   var text = "<ul><li><div>Favourite drink: seltzer</div></li></ul>";

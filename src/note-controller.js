@@ -11,18 +11,3 @@
   }
 exports.NoteController = NoteController;
 })(this);
-
-// (function(exports){
-//   function NoteController(noteList) {
-//     this.noteList = noteList;
-//     this.noteList.createAndAdd('Favourite drink: seltzer');
-//     this.noteListView = new NoteListView(this.noteList);
-//   }
-//
-//   NoteController.prototype.displayNotes = function () {
-//     var notesHTML = this.noteListView.getHTML();
-//     document.getElementById('app').innerHTML = notesHTML;
-//   };
-//
-//   exports.NoteController = NoteController;
-// })(this);
