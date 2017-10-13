@@ -6,10 +6,17 @@
   }
 
   ListView.prototype.getHTML = function(){
-
+    console.log(this.list.notes)
+    var returnText = "<ul>";
+    console.log(this.list.notes.length)
     for( var i = 0 ; i < this.list.notes.length; i++ ) {
-      return ("<ul><li><div>" + this.list.notes[i]._text + "</div></li></ul>");
+      returnText += "<li><div>" +
+      this.list.notes[i].getText().substring(0, 20) +
+      '...' +
+      "</div></li>";
     }
+    returnText +=  "</ul>";
+    return returnText;
   }
   exports.ListView = ListView
 })(this);

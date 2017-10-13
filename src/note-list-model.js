@@ -10,7 +10,7 @@
   }
 
   List.prototype.store = function(text, Noteconstructor = Note) {
-    var note = new Noteconstructor(text);
+    var note = new Noteconstructor(text, this.notes.length);
     this.notes.push(note);
   }
 

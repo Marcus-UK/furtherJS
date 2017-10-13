@@ -5,7 +5,7 @@ function testNoteControllerDisplayHTML() {
 
     }
   };
-
+  console.log('Hello')
   var text = "<ul><li><div>Favourite drink: seltzer</div></li></ul>";
 
   function noteListViewDouble () {};
@@ -19,6 +19,7 @@ function testNoteControllerDisplayHTML() {
 
   noteController.viewNote();
   assert.isTrue(document.getElementById('app').innerHTML === text)
+  console.log('finished')
    }
 
    testNoteControllerDisplayHTML();

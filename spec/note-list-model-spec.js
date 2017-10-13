@@ -6,3 +6,10 @@ function testListStoresNotes() {
   assert.isTrue(note1.getText() === 'test');
 }
 testListStoresNotes();
+
+function testNoteHasIdAssignedOnInstantiation(){
+  var list1 = new List()
+  list1.store('Hello')
+  assert.isTrue(list1.notes[0].id === 0);
+}
+testNoteHasIdAssignedOnInstantiation();
